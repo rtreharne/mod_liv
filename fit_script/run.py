@@ -41,7 +41,7 @@ class Plot:
         self.nextbut = Button(nextit, 'Next', hovercolor = '0.5')
         self.fitallbut = Button(fitallit, 'Fit all', hovercolor = '0.5')
         self.savebut = Button(saveit, 'Save', hovercolor = '0.5')
-        self.sd = Slider(axd, '$d$ (nm)', 0, 1000, valinit = 0)
+        self.sd = Slider(axd, '$d$ (nm)', 0, 3000, valinit = 0)
         self.sd.on_changed(self.update)
         self.openfile(None)
         
